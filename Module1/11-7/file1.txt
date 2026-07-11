@@ -1,0 +1,38 @@
+Day 1 Hardware Practical Activity
+
+Computer Detective Activity
+
+Task 1: Know Your Computer
+
+Open Command Prompt by pressing Win + R, type cmd, and press Enter.
+
+Type:
+
+hostname
+
+This command displays the computer name.
+
+Type:
+
+whoami
+
+This command shows the current user account.
+
+Type:
+
+systeminfo
+CPUID-CPUZ
+
+This command displays detailed system information.
+
+What is the name of the computer?
+
+Which version of Windows is installed?
+
+Task 2: Explore Hardware Components
+
+Type:
+
+wmic cpu get name
+wmic->Windows Management Instrumentation Command-line
+Get-CimInstance Win32_Processor | Select-Object Name
