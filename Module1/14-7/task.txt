@@ -1,0 +1,3 @@
+Create one file that should not delete using delete button or Shift+Delete Button
+
+that can be only deleted with command or owner

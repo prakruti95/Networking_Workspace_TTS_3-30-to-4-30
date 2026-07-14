@@ -1,0 +1,100 @@
+Day 2: Motherboard and CPU
+
+Types of Motherboards
+
+Motherboards come in different sizes, known as form factors.
+
+| Type             | Size             | Common Use                        |
+| ---------------- | ---------------- | --------------------------------- |
+| ATX              | Standard Size    | Gaming and Desktop PCs            |
+| Micro-ATX (mATX) | Smaller than ATX | Budget and Compact PCs            |
+| Mini-ITX         | Very Compact     | Small Form Factor PCs             |
+| E-ATX            | Larger than ATX  | Workstations and High-End Systems |
+
+CPU Socket Compatibility
+
+A CPU must be compatible with the motherboard socket.
+
+| Socket Type    | Supported Processors                |
+| -------------- | ----------------------------------- |
+| Intel LGA 1700 | 12th, 13th, and 14th Gen Intel CPUs |
+| AMD AM4        | Ryzen 1000–5000 Series              |
+| AMD AM5        | Ryzen 7000 Series and Later         |
+
+Note: A processor cannot be installed in a motherboard with a different socket type.
+
+Functions of the CPU
+
+The CPU (Central Processing Unit) is the main processing unit of the computer.
+
+Main Functions:
+
+| Function               | Description                                     |
+| ---------------------- | ----------------------------------------------- |
+| Instruction Processing | Executes commands from software                 |
+| Calculations           | Performs arithmetic and logical operations      |
+| Data Management        | Controls data flow between components           |
+| System Control         | Handles tasks requested by the operating system |
+
+Important CPU Specifications
+
+| Specification | Meaning                                    |
+| ------------- | ------------------------------------------ |
+| Cores         | Individual processing units inside the CPU |
+| Threads       | Virtual processing paths                   |
+| Clock Speed   | Processing speed measured in GHz           |
+| Cache         | High-speed memory used by the CPU          |
+
+Functions of the Chipset
+
+The chipset manages communication between hardware components.
+
+| Connected Components |
+| -------------------- |
+| CPU                  |
+| RAM                  |
+| Storage Devices      |
+| Graphics Cards       |
+| USB Devices          |
+
+Examples of Chipsets
+
+| Intel Chipsets | AMD Chipsets |
+| -------------- | ------------ |
+| B760           | B650         |
+| Z790           | X670         |
+
+Benefits of High-End Chipsets
+
+| Feature              | Benefit                         |
+| -------------------- | ------------------------------- |
+| More PCIe Lanes      | Supports more expansion devices |
+| Overclocking Support | Better performance tuning       |
+| More USB Ports       | Additional connectivity         |
+| More Storage Options | Supports more drives            |
+
+---------------------------------------------------------------------
+
+Command : msinfo32
+diskmgmt.msc
+Shrink Volume
+Select Drive -> right click -> shrink volume -> select size-> Selecte LEtter-> OK
+
+Extend Volume
+Select Drive -> right click -> shrink volume -> select size-> Selecte LEtter-> OK [Select Old Drive]
+
+NTFS,FAT32
+
+CMD -> right click -> properties->select font size
+command : color 0A
+
+    0 = Black       8 = Gray
+    1 = Blue        9 = Light Blue
+    2 = Green       A = Light Green
+    3 = Aqua        B = Light Aqua
+    4 = Red         C = Light Red
+    5 = Purple      D = Light Purple
+    6 = Yellow      E = Light Yellow
+    7 = White       F = Bright White
+
+clean -> cls
