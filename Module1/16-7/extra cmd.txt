@@ -1,0 +1,4 @@
+ipconfig
+ping www.google.com
+
+how to enable and disable ethernet and wifi
