@@ -1,0 +1,5 @@
+Topic: Overview of Modems, Routers, Switches, Access Points, and    Cables
+
+remote desktop connection
+folder sharing
+static IP
