@@ -1,0 +1,346 @@
+# Day 1: Overview of Peripherals
+
+## Theory Content (1 Hour)
+
+### Introduction to Peripherals
+
+Peripherals are external devices connected to a computer to increase its functionality. These devices help users enter data, receive output, communicate, and store information. Peripherals are generally classified as input devices, output devices, and communication devices.
+
+### Printer
+
+A printer is an output device used to produce hard copies of documents, images, and reports on paper. Printers are commonly used in homes, schools, offices, and businesses.
+
+#### Types of Printers
+
+**Inkjet Printer**
+An inkjet printer uses liquid ink sprayed through tiny nozzles onto paper. It is suitable for printing color documents and photographs.
+
+**Laser Printer**
+A laser printer uses toner powder and laser technology to create printed output. It is faster and more economical for high-volume printing.
+
+#### Uses of Printers
+
+Printing documents and reports
+
+Printing photographs
+
+Generating invoices and receipts
+
+Producing educational materials
+
+#### Printer Connection Interfaces
+
+USB connection
+
+Wi-Fi connection
+
+Ethernet network connection
+
+Bluetooth connection in selected models
+
+### Scanner
+
+A scanner is an input device that converts physical documents, photographs, or images into digital format. The scanned data can be stored, edited, or shared electronically.
+
+#### Types of Scanners
+
+**Flatbed Scanner**
+A document is placed on a glass surface for scanning. It is commonly used for photographs and important documents.
+
+**Sheet-fed Scanner**
+Documents are automatically fed into the scanner, making it suitable for scanning multiple pages.
+
+#### Uses of Scanners
+
+Digitizing documents
+
+Preserving old photographs
+
+Creating electronic records
+
+Converting printed text into editable text through OCR technology
+
+#### Scanner Connection Interfaces
+
+USB connection
+
+Wi-Fi connection
+
+Ethernet connection
+
+### Webcam
+
+A webcam is a digital camera connected to a computer for capturing live video and images. It is widely used for communication and online collaboration.
+
+#### Types of Webcams
+
+**Built-in Webcam**
+Integrated into laptops and some monitors.
+
+**External Webcam**
+Connected separately through a USB port and often provides better video quality.
+
+#### Uses of Webcams
+
+Video conferencing
+
+Online teaching and learning
+
+Live streaming
+
+Video recording
+
+Capturing photographs
+
+#### Webcam Connection Interfaces
+
+USB connection
+
+Wi-Fi connection
+
+Bluetooth connection in some devices
+
+### Common Connection Interfaces
+
+**USB (Universal Serial Bus)**
+The most commonly used wired interface for connecting peripherals.
+
+**Wi-Fi**
+Allows wireless communication between peripherals and computers.
+
+**Ethernet**
+Provides a stable wired network connection.
+
+**Bluetooth**
+A short-range wireless technology used for connecting compatible devices.
+
+### Conclusion
+
+Printers, scanners, and webcams are important peripherals that enhance computer functionality. Understanding their purpose, types, and connection methods helps users effectively operate and maintain computer systems.
+
+---
+
+# Practical Activity for Day 1 (30–40 Minutes)
+
+## Activity 1: Peripheral Identification
+
+### Objective
+
+To identify different computer peripherals and their connection interfaces.
+
+### Materials Required
+
+Desktop computer or laptop
+
+Printer
+
+Scanner
+
+Webcam
+
+USB cable
+
+Ethernet cable
+
+### Procedure
+
+Show each peripheral device to students.
+
+Ask students to identify the device name.
+
+Students should observe available ports and connectors.
+
+Connect each device to the computer.
+
+Demonstrate how the operating system detects the device.
+
+Discuss the purpose and use of each device.
+
+### Observation Table
+
+| Device Name | Category      | Connection Type | Main Function |
+| ----------- | ------------- | --------------- | ------------- |
+| Printer     | Output Device | USB/Wi-Fi       | Printing      |
+| Scanner     | Input Device  | USB/Wi-Fi       | Scanning      |
+| Webcam      | Input Device  | USB             | Video Capture |
+
+### Learning Outcome
+
+Students will be able to identify peripherals and understand their functions and connection methods.
+
+---
+
+# Day 2: Power Supply Systems
+
+## Theory Content (30 Minutes)
+
+### Introduction to Power Supply Systems
+
+Every computer requires a stable power source for proper operation. Power supply systems ensure that computer components receive the correct voltage and remain protected from power disturbances.
+
+### SMPS (Switched Mode Power Supply)
+
+SMPS is an electronic device that converts alternating current supplied from the power outlet into direct current required by computer components.
+
+### Functions of SMPS
+
+Converts AC power into DC power
+
+Supplies power to the motherboard
+
+Provides power to storage devices
+
+Supports cooling fans and expansion cards
+
+Maintains stable voltage levels
+
+### Advantages of SMPS
+
+High efficiency
+
+Compact size
+
+Low heat generation
+
+Reliable operation
+
+### Main SMPS Connectors
+
+#### ATX Power Connector
+
+Provides power to the motherboard.
+
+#### CPU Power Connector
+
+Supplies power directly to the processor.
+
+#### SATA Power Connector
+
+Used for SSDs, HDDs, and optical drives.
+
+#### Molex Connector
+
+Used for older storage devices and accessories.
+
+#### PCI Express Connector
+
+Used for graphics cards.
+
+### UPS (Uninterruptible Power Supply)
+
+A UPS is a backup power device that provides electricity during power outages and protects systems from voltage fluctuations.
+
+### Functions of UPS
+
+Provides temporary backup power
+
+Protects hardware from power surges
+
+Prevents sudden shutdowns
+
+Allows safe saving of work during power failure
+
+### Types of UPS
+
+**Offline UPS**
+Provides backup power only when the main supply fails.
+
+**Line Interactive UPS**
+Regulates voltage fluctuations and provides backup power.
+
+**Online UPS**
+Continuously supplies power through its internal system and provides maximum protection.
+
+### Advantages of UPS
+
+Protects data
+
+Improves system reliability
+
+Prevents hardware damage
+
+Supports uninterrupted work
+
+### Conclusion
+
+SMPS and UPS are essential components of a computer power system. SMPS supplies regulated power to internal components, while UPS provides backup power and protection against electrical disturbances.
+
+---
+
+# Practical Activity for Day 2 (30–40 Minutes)
+
+## Activity 1: Identification of Power Cables and Connectors
+
+### Objective
+
+To identify various power connectors used inside a computer.
+
+### Materials Required
+
+Desktop CPU cabinet
+
+SMPS unit
+
+UPS
+
+Power cables
+
+### Procedure
+
+Switch off the computer.
+
+Open the CPU cabinet.
+
+Locate the SMPS unit.
+
+Identify the ATX connector.
+
+Identify the CPU power connector.
+
+Identify SATA power connectors.
+
+Identify Molex connectors.
+
+Identify PCI Express connectors if available.
+
+Observe the UPS and its input and output connections.
+
+Record observations.
+
+### Observation Table
+
+| Connector Name        | Connected Component | Purpose              |
+| --------------------- | ------------------- | -------------------- |
+| ATX Connector         | Motherboard         | Main Power Supply    |
+| CPU Connector         | Processor           | CPU Power            |
+| SATA Connector        | SSD/HDD             | Storage Device Power |
+| Molex Connector       | Legacy Devices      | Peripheral Power     |
+| PCI Express Connector | Graphics Card       | GPU Power            |
+
+---
+
+## Activity 2: UPS Demonstration
+
+### Objective
+
+To understand UPS operation during power failure.
+
+### Procedure
+
+Connect a computer to a UPS.
+
+Turn on the computer.
+
+Disconnect the main power supply to the UPS.
+
+Observe that the computer continues to operate.
+
+Discuss the importance of backup power.
+
+Reconnect the power supply.
+
+### Learning Outcome
+
+Students will understand the role of UPS in maintaining uninterrupted computer operation and protecting data during power failures.
+
+આ બંને દિવસ માટે જો તમે ITI, Diploma અથવા Computer Hardware Maintenance જેવા કોર્સમાં લેક્ચર લો છો, તો હું તેના માટે **ready-to-deliver lecture notes + viva questions + practical worksheet** પણ બનાવી આપી શકું છું.

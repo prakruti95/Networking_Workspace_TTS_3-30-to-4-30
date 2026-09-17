@@ -1,0 +1,25 @@
+Keyboard Troubleshooting
+
+
+Following are the steps mentioned which are used to Troubleshoot a Wired Keyboard (To do things when keyboard is not working properly) :
+- Check the connection between keyboard and the system.
+- Connect the keyboard directly the system using PS/2 or USB port. Whenever using PS/2 keyboard and it's not working,
+  then one should reboot the system and try again once & in case of USB keyboard, just unplug and plug in again.
+- Be sure that there are no bent, broken or missing pins PS/2 connector.
+- Enable the USB setting in the BIOS for keyboard connection if it's disable.
+- Check the port by connecting another keyboard to it. If the newly connected keyboard is working then there is some default in our keyboard.
+
+Following are the things which we can do while our keyboard keys do not strike correctly or stop working :
+- Make the keyboard free of dust, dirt and foreign matter. The keys can easily be removed, so after removing it the below 
+  grip needs to be properly maintained by cleaning it with a brush or blower.
+- Clean the keyboard by using brush or by turning the keyboard upside down and gently tapping it to remove any dirt.
+- Remove the keyboard connection if you spill any liquid on it. Make the keyboard upside down and connect only after it dries completely.
+- Use compressed air to blow the dust from the hard to clean gaps. (Use static safe vacuum cleaner for this purpose)
+
+Following are some of points mentioned which we should follow while wrongs characters get typed :
+- Wrong characters gets typed because the keys do not strike correctly.
+- Cleaning the keyboard by air blower to remove the obstructions under the key may solve the problem.
+- If the issue continues, test the keyboard to another port, if it works then the keyboard port may be damaged.
+- If the keyboard does not function in the new port than replacing the keyboard is recommended.
+
+So this are all the methods and steps which one can follow if their keyboard is showing any kind of error in its working.

@@ -1,0 +1,157 @@
+Advanced CMD and PowerShell Commands
+
+Network Connections
+
+Command:
+netstat -ano
+
+Purpose:
+Displays all active network connections along with their Process IDs (PID).
+
+Command:
+netstat -ab
+
+Purpose:
+Shows which application is using each network connection. Administrator permission may be required.
+
+Route Table
+
+Command:
+route print
+
+Purpose:
+Displays the routing table used by Windows to send network traffic.
+
+DNS Cache
+
+Command:
+ipconfig /displaydns
+
+Purpose:
+Shows the DNS records recently resolved and stored in the Windows cache.
+
+User Accounts
+
+Command:
+net user
+
+Purpose:
+Displays a list of all user accounts available on the computer.
+
+Command:
+net user USERNAME
+
+Purpose:
+Displays detailed information about a specific user account.
+
+Shared Resources
+
+Command:
+net share
+
+Purpose:
+Shows all shared folders and resources on the computer.
+
+Installed Drivers
+
+Command:
+driverquery
+
+Purpose:
+Displays a list of installed device drivers.
+
+Running Tasks and Services
+
+Command:
+tasklist /svc
+
+Purpose:
+Displays running processes along with the services associated with them.
+
+Advanced PowerShell Commands
+
+System Information
+
+Command:
+Get-ComputerInfo
+
+Purpose:
+Displays detailed information about the computer, operating system, hardware, and configuration.
+
+Installed Software
+
+Command:
+Get-Package
+
+Purpose:
+Displays a list of installed software packages.
+
+Running Processes
+
+Command:
+Get-Process | Sort-Object CPU -Descending
+
+Purpose:
+Shows running processes sorted by CPU usage, with the highest usage displayed first.
+
+Network Adapters
+
+Command:
+Get-NetAdapter
+
+Purpose:
+Displays information about all network adapters installed on the computer.
+
+Open TCP Connections
+
+Command:
+Get-NetTCPConnection
+
+Purpose:
+Displays active TCP network connections.
+
+Running Services
+
+Command:
+Get-Service | Where-Object {$_.Status -eq "Running"}
+
+Purpose:
+Displays all currently running services.
+
+Cool Terminal Commands
+
+Continuous Ping
+
+Command:
+ping -t google.com
+
+Purpose:
+Continuously sends ping requests until stopped manually using Ctrl + C.
+
+Folder Structure View
+
+Command:
+tree C:\ /F
+
+Purpose:
+Displays the complete folder and file structure of the C drive.
+
+Change Terminal Color
+
+Command:
+color 0A
+
+Purpose:
+Changes the Command Prompt text color to green with a black background.
+
+Fake Loading Bar in PowerShell
+
+Command:
+
+for ($i=0; $i -le 100; $i++) {
+Write-Progress -Activity "Loading" -PercentComplete $i
+Start-Sleep -Milliseconds 50
+}
+
+Purpose:
+Displays a simple loading progress bar animation in PowerShell.

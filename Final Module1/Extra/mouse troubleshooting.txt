@@ -1,0 +1,22 @@
+Mouse Troubleshooting
+
+
+Generally, Mouse works accurately and there are not much problems seen in them but just in case we need 
+the knowledge of what to do things when it stops working or show any kind of problem. Thus, following are the steps for Troubleshooting Mouse Issue :
+- Check if the mouse is connected to the PS/2 or USB port properly.
+- Verify that there are no opticals like hair or fuzz to block the sensor.
+- Turn the mouse and remove the blocking from the hole, if any.
+- Clean or replace the surface of the mouse pad. Also, now a days there are many accurate sensory mouse are available 
+  in market which do not require any kind of surface mouse pad.
+
+Now, we will see that what are the steps which we should take while there is Issue in mouse Scroll Wheel :
+- Check the working of Scroll wheel by reconnecting the USB mouse cable into the port.
+- Turn off the computer.
+- Clean the area around the scroll wheel.
+- Turn on the computer and reset the mouse.
+- Verify if the mouse works on another USB port.
+- Check the USB mouse in another computer.
+- Test another USB mouse from another computer.
+- If it works, you will need to replace the mouse.
+- Spending money on repairing the mouse is not recommended because in cheap rate quality mouse are available we can use that.
+

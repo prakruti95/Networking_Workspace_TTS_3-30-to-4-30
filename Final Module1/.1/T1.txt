@@ -1,0 +1,535 @@
+Day 2: Motherboard and CPU
+
+Types of Motherboards
+
+Motherboards come in different sizes, known as form factors.
+
+| Type             | Size             | Common Use                        |
+| ---------------- | ---------------- | --------------------------------- |
+| ATX              | Standard Size    | Gaming and Desktop PCs            |
+| Micro-ATX (mATX) | Smaller than ATX | Budget and Compact PCs            |
+| Mini-ITX         | Very Compact     | Small Form Factor PCs             |
+| E-ATX            | Larger than ATX  | Workstations and High-End Systems |
+
+CPU Socket Compatibility
+
+A CPU must be compatible with the motherboard socket.
+
+| Socket Type    | Supported Processors                |
+| -------------- | ----------------------------------- |
+| Intel LGA 1700 | 12th, 13th, and 14th Gen Intel CPUs |
+| AMD AM4        | Ryzen 1000–5000 Series              |
+| AMD AM5        | Ryzen 7000 Series and Later         |
+
+Note: A processor cannot be installed in a motherboard with a different socket type.
+
+Functions of the CPU
+
+The CPU (Central Processing Unit) is the main processing unit of the computer.
+
+Main Functions:
+
+| Function               | Description                                     |
+| ---------------------- | ----------------------------------------------- |
+| Instruction Processing | Executes commands from software                 |
+| Calculations           | Performs arithmetic and logical operations      |
+| Data Management        | Controls data flow between components           |
+| System Control         | Handles tasks requested by the operating system |
+
+Important CPU Specifications
+
+| Specification | Meaning                                    |
+| ------------- | ------------------------------------------ |
+| Cores         | Individual processing units inside the CPU |
+| Threads       | Virtual processing paths                   |
+| Clock Speed   | Processing speed measured in GHz           |
+| Cache         | High-speed memory used by the CPU          |
+
+Functions of the Chipset
+
+The chipset manages communication between hardware components.
+
+| Connected Components |
+| -------------------- |
+| CPU                  |
+| RAM                  |
+| Storage Devices      |
+| Graphics Cards       |
+| USB Devices          |
+
+Examples of Chipsets
+
+| Intel Chipsets | AMD Chipsets |
+| -------------- | ------------ |
+| B760           | B650         |
+| Z790           | X670         |
+
+Benefits of High-End Chipsets
+
+| Feature              | Benefit                         |
+| -------------------- | ------------------------------- |
+| More PCIe Lanes      | Supports more expansion devices |
+| Overclocking Support | Better performance tuning       |
+| More USB Ports       | Additional connectivity         |
+| More Storage Options | Supports more drives            |
+
+---------------------------------------------------------------------
+
+Command : msinfo32
+diskmgmt.msc
+Shrink Volume
+Select Drive -> right click -> shrink volume -> select size-> Selecte LEtter-> OK
+
+Extend Volume
+Select Drive -> right click -> shrink volume -> select size-> Selecte LEtter-> OK [Select Old Drive]
+NEFT,FAT32
+
+
+
+
+
+Activity 1: Identify Motherboard Slots
+
+| Component        | Purpose                        |
+| ---------------- | ------------------------------ |
+| CPU Socket       | Holds the processor            |
+| RAM (DIMM) Slots | Holds memory modules           |
+| PCIe x16 Slot    | Used for graphics cards        |
+| PCIe x1 Slot     | Used for Wi-Fi and sound cards |
+| M.2 Slot         | Used for NVMe SSDs             |
+| SATA Ports       | Used for HDDs and SATA SSDs    |
+
+Activity 2: Identify Rear I/O Ports
+
+| Port           | Function                                     |
+| -------------- | -------------------------------------------- |
+| USB Type-A     | Connects peripherals                         |
+| USB Type-C     | High-speed data and charging                 |
+| Ethernet (LAN) | Network connection                           |
+| Audio Jacks    | Sound input/output                           |
+| HDMI           | Video output                                 |
+| DisplayPort    | Video output                                 |
+| PS/2           | Keyboard or mouse connection (older systems) |
+
+Activity 3: Component Matching
+
+| Component    | Connects To   |
+| ------------ | ------------- |
+| CPU          | CPU Socket    |
+| RAM          | DIMM Slot     |
+| GPU          | PCIe x16 Slot |
+| NVMe SSD     | M.2 Slot      |
+| SATA SSD/HDD | SATA Port     |
+
+Quick Quiz
+
+| Question                                               | Answer                                           |
+| ------------------------------------------------------ | ------------------------------------------------ |
+| What is the primary function of the CPU?               | Execute instructions and process data            |
+| What is the role of the chipset?                       | Manage communication between hardware components |
+| Which slot is used for a graphics card?                | PCIe x16 Slot                                    |
+| What is the difference between ATX and Mini-ITX?       | Mini-ITX is much smaller than ATX                |
+| Can an AMD AM5 CPU be installed in an AM4 motherboard? | No, the sockets are different                    |
+
+Learning Outcome
+
+| Skills Gained                              |
+| ------------------------------------------ |
+| Understand the role of the CPU and chipset |
+| Identify motherboard form factors          |
+| Check CPU and motherboard compatibility    |
+| Recognize motherboard slots and ports      |
+
+
+
+This command shows memory capacity.
+
+Type:
+
+wmic diskdrive get model,size
+
+Get-CimInstance Win32_DiskDrive | Select-Object Model, Size
+Get-PhysicalDisk | Select-Object FriendlyName, Size
+Get-Disk | Select-Object Number, FriendlyName, Size
+Get-Disk | Select-Object Number, FriendlyName, @{Name="Size(GB)";Expression={[math]::Round($_.Size/1GB,2)}}
+
+
+
+
+This command displays storage device information.
+
+Discussion:
+
+Students can compare their hardware specifications with the concepts learned in the lecture. They can identify the processor, memory, and storage available in their systems.
+
+Task 3: Network Investigation
+
+Type:
+
+ipconfig
+
+This command displays the IP address and network details.
+
+Type:
+
+ping google.com
+
+This command checks internet connectivity by sending data packets and receiving a response.
+
+Discussion:
+
+Students can understand how computers communicate over a network and how internet connectivity is tested.
+
+
+
+Task 5: System Performance Observation
+
+Open Task Manager:
+
+taskmgr
+
+Observe:
+
+Current CPU usage
+
+Current RAM usage
+
+Application using the highest memory
+
+Discussion:
+
+Students can relate these observations to processor performance and 
+memory utilization concepts discussed during the lecture.
+
+Challenge Activity
+
+Find the processor model.
+
+Find the RAM capacity.
+
+Find the IP address.
+
+Create a folder using their name.
+
+Create a text file inside that folder.
+
+---------------------
+Additional Commands
+---------------------
+tree
+
+Displays the folder structure in a visual format.
+
+color 0A
+
+Changes the Command Prompt text color to green.
+
+Submission Details
+
+Each student should submit the following information:
+
+Computer Name
+
+CPU Model
+
+RAM Size
+
+Storage Information
+
+IP Address
+
+Learning Outcome
+
+Day 3: RAM and Storage
+
+1. Types of RAM
+
+**RAM (Random Access Memory)** is temporary memory used by the CPU to store data that is actively being used.
+
+| Type     | Speed          | Voltage | Common Use                      |
+| -------- | -------------- | ------- | ------------------------------- |
+| **DDR3** | 800–2133 MT/s  | 1.5V    | Older PCs                       |
+| **DDR4** | 2133–5333 MT/s | 1.2V    | Most modern PCs                 |
+| **DDR5** | 4800+ MT/s     | 1.1V    | Latest high-performance systems |
+
+### Key Differences
+
+* **DDR4 is faster and more efficient than DDR3.**
+* **DDR5 offers higher bandwidth and capacity than DDR4.**
+* RAM generations are **not physically compatible** with each other due to different notch positions.
+
+### Important RAM Terms
+
+* **Capacity:** 8GB, 16GB, 32GB, etc.
+* **Speed:** Measured in MHz or MT/s.
+* **Dual Channel:** Using two matching RAM sticks for improved performance.
+* **Latency (CL):** Delay before data access.
+
+---
+
+## 2. Storage Types
+
+### Hard Disk Drive (HDD)
+
+An HDD uses spinning magnetic disks to store data.
+
+**Advantages:**
+
+* Large storage capacity
+* Lower cost per GB
+
+**Disadvantages:**
+
+* Slower performance
+* More prone to mechanical failure
+* Noisy operation
+
+### Solid State Drive (SSD)
+
+An SSD uses flash memory with no moving parts.
+
+**Advantages:**
+
+* Faster boot times
+* Faster file transfers
+* More reliable
+* Silent operation
+
+**Disadvantages:**
+
+* Higher cost per GB than HDDs
+
+---
+
+## 3. SATA SSD vs NVMe SSD
+
+| Feature       | SATA SSD       | NVMe SSD         |
+| ------------- | -------------- | ---------------- |
+| Interface     | SATA           | PCIe             |
+| Typical Speed | Up to 550 MB/s | 2000–14000+ MB/s |
+| Connector     | SATA cable     | M.2 slot         |
+| Performance   | Good           | Excellent        |
+
+### Storage Comparison
+
+| Type     | Speed     | Cost     |
+| -------- | --------- | -------- |
+| HDD      | Slow      | Cheapest |
+| SATA SSD | Fast      | Moderate |
+| NVMe SSD | Very Fast | Higher   |
+-----------------------------------------------------
+| Feature       | SATA SSD               | NVMe SSD                                          |
+| ------------- | ---------------------- | ------------------------------------------------- |
+| Interface     | SATA (Serial ATA)      | PCIe (Peripheral Component Interconnect Express)  |
+| Typical Speed | ~500–600 MB/s          | ~2,000–14,000 MB/s (depending on PCIe generation) |
+| Latency       | Higher                 | Lower                                             |
+| Form Factors  | 2.5-inch, M.2          | Usually M.2, add-in cards                         |
+| Cost          | Usually cheaper        | Usually more expensive                            |
+| Best For      | General use, older PCs | Gaming, video editing, heavy workloads            |
+
+
+---
+
+Section 1: Useful Keyboard Shortcuts
+
+| Shortcut            | Function                    |
+| ------------------- | --------------------------- |
+| Windows + E         | Open File Explorer          |
+| Windows + R         | Open Run Dialog Box         |
+| Windows + D         | Show Desktop                |
+| Windows + L         | Lock Computer               |
+| Windows + Tab       | Task View                   |
+| Alt + Tab           | Switch Between Applications |
+| Ctrl + Shift + Esc  | Open Task Manager Directly  |
+| Ctrl + A            | Select All                  |
+| Ctrl + C            | Copy                        |
+| Ctrl + V            | Paste                       |
+| Ctrl + X            | Cut                         |
+| Ctrl + Z            | Undo                        |
+| Ctrl + Y            | Redo                        |
+| F2                  | Rename File                 |
+| F5                  | Refresh                     |
+| Windows + Shift + S | Screenshot Tool             |
+
+
+
+---
+
+Section 2: Run Commands
+
+Press Windows + R and try these commands.
+
+| Command      | Opens                |
+| ------------ | -------------------- |
+| cmd          | Command Prompt       |
+| msconfig     | System Configuration |
+| taskmgr      | Task Manager         |
+| control      | Control Panel        |
+| appwiz.cpl   | Installed Programs   |
+| devmgmt.msc  | Device Manager       |
+| diskmgmt.msc | Disk Management      |
+| services.msc | Windows Services     |
+| ncpa.cpl     | Network Connections  |
+| calc         | Calculator           |
+| notepad      | Notepad              |
+| dxdiag       | DirectX Information  |
+| cleanmgr     | Disk Cleanup         |
+
+Activity:
+Students open 5 different tools using Run commands.
+
+---
+
+Section 3: Basic CMD Commands
+
+Open Command Prompt.
+
+| Command           | Purpose                      |
+| ----------------- | ---------------------------- |
+| hostname          | Shows PC Name                |
+| whoami            | Shows Current User           |
+| ipconfig          | Shows IP Address             |
+| ipconfig /all     | Detailed Network Information |
+| systeminfo        | Complete System Information  |
+| tasklist          | Running Processes            |
+| cls               | Clear Screen                 |
+| date              | Show Current Date            |
+| time              | Show Current Time            |
+| shutdown /s /t 60 | Shutdown after 60 Seconds    |
+| shutdown /a       | Cancel Shutdown              |
+| tree              | Display Folder Structure     |
+| dir               | Show Files and Folders       |
+
+Activity:
+Students execute each command and explain the output.
+
+Section 4: Cool CMD Tricks
+
+Matrix Effect
+
+Command:
+
+color 0A
+tree
+
+Creates a Matrix-like green screen effect.
+
+
+(Teacher demo only)
+
+Open Multiple Websites Together
+
+Command:
+
+start chrome
+start notepad
+start calc
+
+Launches multiple applications at once.
+
+Check Battery Health
+
+Command:
+
+powercfg /batteryreport
+
+Generates battery report for laptops.
+
+Check Wi-Fi Password
+
+Command:
+
+netsh wlan show profiles
+
+Then:
+
+netsh wlan show profile name="WiFi_Name" key=clear
+
+Shows saved Wi-Fi password.
+
+Teacher should explain ethical use.
+
+---
+
+Section 5: System Information Hacks
+
+Check RAM Size
+
+Command:
+
+wmic memorychip get capacity
+
+Check CPU Name
+
+Command:
+
+wmic cpu get name
+
+Check BIOS Version
+
+Command:
+
+wmic bios get smbiosbiosversion
+
+Check Serial Number
+
+Command:
+
+wmic bios get serialnumber
+
+Check Disk Information
+
+Command:
+
+wmic diskdrive get model,size
+
+Activity:
+Students identify specifications of their lab PC.
+
+---
+
+Section 6: Hidden Windows Tools
+
+| Command      | Tool                        |
+| ------------ | --------------------------- |
+| mrt          | Malware Removal Tool        |
+| charmap      | Character Map               |
+| osk          | On-Screen Keyboard          |
+| magnify      | Magnifier                   |
+| snippingtool | Screenshot Tool             |
+| msinfo32     | Detailed System Information |
+| perfmon      | Performance Monitor         |
+| resmon       | Resource Monitor            |
+
+Activity:
+Students explore one tool and explain its use.
+
+---
+
+Mini Challenge
+
+Ask students to find:
+
+| Information   | Command                      |
+| ------------- | ---------------------------- |
+| Computer Name | hostname                     |
+| Current User  | whoami                       |
+| RAM Size      | wmic memorychip get capacity |
+| CPU Model     | wmic cpu get name            |
+| IP Address    | ipconfig                     |
+
+First student to complete all 5 wins.
+
+Learning Outcome
+
+Students will be able to:
+
+* Use professional Windows shortcuts
+* Navigate Windows faster
+* Use Command Prompt confidently
+* Find system specifications without opening settings
+* Access hidden Windows tools
+* Troubleshoot basic PC issues using built-in commands
+
+
+

@@ -1,0 +1,209 @@
+Section 1: Useful Keyboard Shortcuts
+
+| Shortcut            | Function                    |
+| ------------------- | --------------------------- |
+| Windows + E         | Open File Explorer          |
+| Windows + R         | Open Run Dialog Box         |
+| Windows + D         | Show Desktop                |
+| Windows + L         | Lock Computer               |
+| Windows + Tab       | Task View                   |
+| Alt + Tab           | Switch Between Applications |
+| Ctrl + Shift + Esc  | Open Task Manager Directly  |
+| Ctrl + A            | Select All                  |
+| Ctrl + C            | Copy                        |
+| Ctrl + V            | Paste                       |
+| Ctrl + X            | Cut                         |
+| Ctrl + Z            | Undo                        |
+| Ctrl + Y            | Redo                        |
+| F2                  | Rename File                 |
+| F5                  | Refresh                     |
+| Windows + Shift + S | Screenshot Tool             |
+
+
+
+---
+
+Section 2: Run Commands
+
+Press Windows + R and try these commands.
+
+| Command      | Opens                |
+| ------------ | -------------------- |
+| cmd          | Command Prompt       |
+| msconfig     | System Configuration |
+| taskmgr      | Task Manager         |
+| control      | Control Panel        |
+| appwiz.cpl   | Installed Programs   |
+| devmgmt.msc  | Device Manager       |
+| diskmgmt.msc | Disk Management      |
+| services.msc | Windows Services     |
+| ncpa.cpl     | Network Connections  |
+| calc         | Calculator           |
+| notepad      | Notepad              |
+| dxdiag       | DirectX Information  |
+| cleanmgr     | Disk Cleanup         |
+
+Activity:
+Students open 5 different tools using Run commands.
+
+---
+
+Section 3: Basic CMD Commands
+
+Open Command Prompt.
+
+| Command           | Purpose                      |
+| ----------------- | ---------------------------- |
+| hostname          | Shows PC Name                |
+| whoami            | Shows Current User           |
+| ipconfig          | Shows IP Address             |
+| ipconfig /all     | Detailed Network Information |
+| systeminfo        | Complete System Information  |
+| tasklist          | Running Processes            |
+| cls               | Clear Screen                 |
+| date              | Show Current Date            |
+| time              | Show Current Time            |
+| shutdown /s /t 60 | Shutdown after 60 Seconds    |
+| shutdown /a       | Cancel Shutdown              |
+| tree              | Display Folder Structure     |
+| dir               | Show Files and Folders       |
+
+Activity:
+Students execute each command and explain the output.
+
+---
+
+Section 4: Cool CMD Tricks
+
+Matrix Effect
+
+Command:
+
+color 0A
+tree
+
+Creates a Matrix-like green screen effect.
+
+Create a Folder Impossible to Delete Normally
+
+Command:
+
+md con\
+
+(Teacher demo only)
+
+Open Multiple Websites Together
+
+Command:
+
+start chrome
+start notepad
+start calc
+
+Launches multiple applications at once.
+
+Check Battery Health
+
+Command:
+
+powercfg /batteryreport
+
+Generates battery report for laptops.
+
+Check Wi-Fi Password
+
+Command:
+
+netsh wlan show profiles
+
+Then:
+
+netsh wlan show profile name="WiFi_Name" key=clear
+
+Shows saved Wi-Fi password.
+
+Teacher should explain ethical use.
+
+---
+
+Section 5: System Information Hacks
+
+Check RAM Size
+
+Command:
+
+wmic memorychip get capacity
+
+Check CPU Name
+
+Command:
+
+wmic cpu get name
+
+Check BIOS Version
+
+Command:
+
+wmic bios get smbiosbiosversion
+
+Check Serial Number
+
+Command:
+
+wmic bios get serialnumber
+
+Check Disk Information
+
+Command:
+
+wmic diskdrive get model,size
+
+Activity:
+Students identify specifications of their lab PC.
+
+---
+
+Section 6: Hidden Windows Tools
+
+| Command      | Tool                        |
+| ------------ | --------------------------- |
+| mrt          | Malware Removal Tool        |
+| charmap      | Character Map               |
+| osk          | On-Screen Keyboard          |
+| magnify      | Magnifier                   |
+| snippingtool | Screenshot Tool             |
+| msinfo32     | Detailed System Information |
+| perfmon      | Performance Monitor         |
+| resmon       | Resource Monitor            |
+
+Activity:
+Students explore one tool and explain its use.
+
+---
+
+Mini Challenge
+
+Ask students to find:
+
+| Information   | Command                      |
+| ------------- | ---------------------------- |
+| Computer Name | hostname                     |
+| Current User  | whoami                       |
+| RAM Size      | wmic memorychip get capacity |
+| CPU Model     | wmic cpu get name            |
+| IP Address    | ipconfig                     |
+
+First student to complete all 5 wins.
+
+Learning Outcome
+
+Students will be able to:
+
+* Use professional Windows shortcuts
+* Navigate Windows faster
+* Use Command Prompt confidently
+* Find system specifications without opening settings
+* Access hidden Windows tools
+* Troubleshoot basic PC issues using built-in commands
+
+

@@ -1,0 +1,465 @@
+# Day 3: RAM and Storage
+
+
+### 1. Types of RAM
+
+**RAM (Random Access Memory)** is temporary memory used by the CPU to store data that is actively being used.
+
+| Type     | Speed          | Voltage | Common Use                      |
+| -------- | -------------- | ------- | ------------------------------- |
+| **DDR3** | 800–2133 MT/s  | 1.5V    | Older PCs                       |
+| **DDR4** | 2133–5333 MT/s | 1.2V    | Most modern PCs                 |
+| **DDR5** | 4800+ MT/s     | 1.1V    | Latest high-performance systems |
+
+### Key Differences
+
+* **DDR4 is faster and more efficient than DDR3.**
+* **DDR5 offers higher bandwidth and capacity than DDR4.**
+* RAM generations are **not physically compatible** with each other due to different notch positions.
+
+### Important RAM Terms
+
+* **Capacity:** 8GB, 16GB, 32GB, etc.
+* **Speed:** Measured in MHz or MT/s.
+* **Dual Channel:** Using two matching RAM sticks for improved performance.
+* **Latency (CL):** Delay before data access.
+
+---
+
+## 2. Storage Types
+
+### Hard Disk Drive (HDD)
+
+An HDD uses spinning magnetic disks to store data.
+
+**Advantages:**
+
+* Large storage capacity
+* Lower cost per GB
+
+**Disadvantages:**
+
+* Slower performance
+* More prone to mechanical failure
+* Noisy operation
+
+### Solid State Drive (SSD)
+
+An SSD uses flash memory with no moving parts.
+
+**Advantages:**
+
+* Faster boot times
+* Faster file transfers
+* More reliable
+* Silent operation
+
+**Disadvantages:**
+
+* Higher cost per GB than HDDs
+
+---
+
+## 3. SATA SSD vs NVMe SSD
+
+| Feature       | SATA SSD       | NVMe SSD         |
+| ------------- | -------------- | ---------------- |
+| Interface     | SATA           | PCIe             |
+| Typical Speed | Up to 550 MB/s | 2000–14000+ MB/s |
+| Connector     | SATA cable     | M.2 slot         |
+| Performance   | Good           | Excellent        |
+
+### Storage Comparison
+
+| Type     | Speed     | Cost     |
+| -------- | --------- | -------- |
+| HDD      | Slow      | Cheapest |
+| SATA SSD | Fast      | Moderate |
+| NVMe SSD | Very Fast | Higher   |
+
+---
+### 1. What is a GPU?
+
+A **GPU (Graphics Processing Unit)** is a specialized processor designed to handle graphics rendering and parallel computations.
+
+Common uses:
+
+* Gaming
+* Video editing
+* 3D rendering
+* Artificial Intelligence (AI)
+* Machine Learning
+* Cryptocurrency mining
+
+### Types of GPUs
+
+#### Integrated GPU (iGPU)
+
+Built into the CPU.
+
+**Advantages:**
+
+* Lower power consumption
+* Lower cost
+* Suitable for office work and media playback
+
+**Examples:**
+
+* Intel UHD Graphics
+* AMD Radeon Graphics (integrated)
+
+#### Dedicated (Discrete) GPU
+
+A separate expansion card installed in a PCIe slot.
+
+**Advantages:**
+
+* Much higher performance
+* Dedicated video memory (VRAM)
+* Better for gaming and professional workloads
+
+**Examples:**
+
+* NVIDIA GeForce RTX series
+* AMD Radeon RX series
+
+---
+
+### 2. GPU Components
+
+A graphics card typically contains:
+
+* GPU Chip (the processor)
+* VRAM (Video Memory)
+* Cooling System
+* PCIe Connector
+* Display Outputs (HDMI, DisplayPort)
+
+### Common GPU Ports
+
+* HDMI
+* DisplayPort
+* DVI (older)
+* VGA (very old)
+
+---
+
+## 3. Cooling Systems
+
+Computer components generate heat and must be cooled to operate safely.
+
+Main components needing cooling:
+
+* CPU
+* GPU
+* Power Supply
+* Case interior
+
+---
+
+## 4. Air Cooling
+
+Air cooling uses:
+
+* Heat sink
+* Cooling fan
+
+### How It Works
+
+1. Heat moves from the CPU/GPU into the heatsink.
+2. The heatsink spreads the heat.
+3. The fan blows air across the fins.
+4. Heat is expelled from the case.
+
+### Advantages
+
+* Affordable
+* Reliable
+* Easy to install
+* Low maintenance
+
+### Disadvantages
+
+* Can be noisy
+* Less efficient for extreme workloads
+
+---
+
+## 5. Liquid Cooling
+
+Liquid cooling uses:
+
+* Water block
+* Pump
+* Tubes
+* Radiator
+* Fans
+
+### How It Works
+
+1. Coolant absorbs heat from the CPU.
+2. Pump circulates coolant.
+3. Radiator releases heat.
+4. Coolant returns to the CPU block.
+
+### Advantages
+
+* Better cooling performance
+* Quieter operation
+* Attractive appearance
+
+### Disadvantages
+
+* More expensive
+* More complex
+* Potential leak risk (rare in quality systems)
+
+---
+
+## Air Cooling vs Liquid Cooling
+
+| Feature             | Air Cooling | Liquid Cooling |
+| ------------------- | ----------- | -------------- |
+| Cost                | Lower       | Higher         |
+| Installation        | Easier      | More complex   |
+| Maintenance         | Minimal     | Moderate       |
+| Cooling Performance | Good        | Excellent      |
+| Noise               | Moderate    | Usually lower  |
+
+---
+=========================================================================================================================================================
+Section 1: Useful Keyboard Shortcuts
+
+| Shortcut            | Function                    |
+| ------------------- | --------------------------- |
+| Windows + E         | Open File Explorer          |
+| Windows + R         | Open Run Dialog Box         |
+| Windows + D         | Show Desktop                |
+| Windows + L         | Lock Computer               |
+| Windows + Tab       | Task View                   |
+| Alt + Tab           | Switch Between Applications |
+| Ctrl + Shift + Esc  | Open Task Manager Directly  |
+| Ctrl + A            | Select All                  |
+| Ctrl + C            | Copy                        |
+| Ctrl + V            | Paste                       |
+| Ctrl + X            | Cut                         |
+| Ctrl + Z            | Undo                        |
+| Ctrl + Y            | Redo                        |
+| F2                  | Rename File                 |
+| F5                  | Refresh                     |
+| Windows + Shift + S | Screenshot Tool             |
+
+
+
+---
+
+Section 2: Run Commands
+
+Press Windows + R and try these commands.
+
+| Command      | Opens                |
+| ------------ | -------------------- |
+| cmd          | Command Prompt       |
+| msconfig     | System Configuration |
+| taskmgr      | Task Manager         |
+| control      | Control Panel        |
+| appwiz.cpl   | Installed Programs   |
+| devmgmt.msc  | Device Manager       |
+| diskmgmt.msc | Disk Management      |
+| services.msc | Windows Services     |
+| ncpa.cpl     | Network Connections  |
+| calc         | Calculator           |
+| notepad      | Notepad              |
+| dxdiag       | DirectX Information  |
+| cleanmgr     | Disk Cleanup         |
+
+Activity:
+Students open 5 different tools using Run commands.
+
+---
+
+Section 3: Basic CMD Commands
+
+Open Command Prompt.
+
+| Command           | Purpose                      |
+| ----------------- | ---------------------------- |
+| hostname          | Shows PC Name                |
+| whoami            | Shows Current User           |
+| ipconfig          | Shows IP Address             |
+| ipconfig /all     | Detailed Network Information |
+| systeminfo        | Complete System Information  |
+| tasklist          | Running Processes            |
+| cls               | Clear Screen                 |
+| date              | Show Current Date            |
+| time              | Show Current Time            |
+| shutdown /s /t 60 | Shutdown after 60 Seconds    |
+| shutdown /a       | Cancel Shutdown              |
+| tree              | Display Folder Structure     |
+| dir               | Show Files and Folders       |
+
+Activity:
+Students execute each command and explain the output.
+
+Section 4: Cool CMD Tricks
+
+Matrix Effect
+
+Command:
+
+color 0A
+tree
+
+Creates a Matrix-like green screen effect.
+
+Create a Folder Impossible to Delete Normally
+
+Command:
+
+md con\
+rd /s /q \\?\C:\Users\Admin\Desktop\con
+rd /s /q "\\?\C:\Users\Admin\con"
+
+
+Open Multiple Websites Together
+
+Command:
+
+start chrome
+start notepad
+start calc
+
+Launches multiple applications at once.
+
+Check Battery Health
+
+Command:
+
+powercfg /batteryreport
+
+Generates battery report for laptops.
+
+
+
+Section 5: System Information Hacks
+
+Check RAM Size
+
+Command:
+
+wmic memorychip get capacity
+
+
+Get-CimInstance Win32_PhysicalMemory | Select-Object Capacity
+Get-CimInstance Win32_PhysicalMemory |
+Select-Object @{Name="Capacity(GB)";Expression={[math]::Round($_.Capacity/1GB,2)}}
+Get-CimInstance Win32_PhysicalMemory |
+Select-Object BankLabel, Manufacturer, Capacity, Speed
+
+Check CPU Name
+
+Command:
+
+wmic cpu get name
+
+Get-CimInstance Win32_Processor | Select-Object Name
+Get-CimInstance Win32_Processor |
+Select-Object Name, NumberOfCores, NumberOfLogicalProcessors, MaxClockSpeed
+
+Check BIOS Version
+
+Command:
+
+wmic bios get smbiosbiosversion
+
+Get-CimInstance Win32_BIOS | Select-Object SMBIOSBIOSVersion
+(Get-CimInstance Win32_BIOS).SMBIOSBIOSVersion
+Get-CimInstance Win32_BIOS |
+Select-Object Manufacturer, SMBIOSBIOSVersion, ReleaseDate
+
+
+Check Serial Number
+
+Command:
+
+wmic bios get serialnumber
+
+Get-CimInstance Win32_BIOS | Select-Object SerialNumber
+(Get-CimInstance Win32_BIOS).SerialNumber
+Get-CimInstance Win32_SystemEnclosure | Select-Object SerialNumber
+
+
+Check Disk Information
+
+Command:
+
+wmic diskdrive get model,size
+
+Get-CimInstance Win32_DiskDrive | Select-Object Model, Size
+
+Get-CimInstance Win32_DiskDrive |
+Select-Object Model,
+@{Name="Size(GB)";Expression={[math]::Round($_.Size/1GB,2)}}
+
+Get-CimInstance Win32_DiskDrive |
+Select-Object Model, InterfaceType,
+@{Name="Size(GB)";Expression={[math]::Round($_.Size/1GB,2)}}
+
+Activity:
+Students identify specifications of their lab PC.
+
+---
+
+Section 6: Hidden Windows Tools
+
+| Command      | Tool                        |
+| ------------ | --------------------------- |
+| mrt          | Malware Removal Tool        |
+| charmap      | Character Map               |
+| osk          | On-Screen Keyboard          |
+| magnify      | Magnifier                   |
+| snippingtool | Screenshot Tool             |
+| msinfo32     | Detailed System Information |
+| perfmon      | Performance Monitor         |
+| resmon       | Resource Monitor            |
+
+Activity:
+Students explore one tool and explain its use.
+
+---
+
+Mini Challenge
+
+1. Computer Name 
+2. Current User
+3. RAM Size 
+4. CPU Model
+5. IP Address
+
+
+
+
+
+
+
+
+
+
+
+Ask students to find:
+
+| Information   | Command                      |
+| ------------- | ---------------------------- |
+| Computer Name | hostname                     |
+| Current User  | whoami                       |
+| RAM Size      | wmic memorychip get capacity |
+| CPU Model     | wmic cpu get name            |
+| IP Address    | ipconfig                     |
+
+
+
+
+
+
+
+

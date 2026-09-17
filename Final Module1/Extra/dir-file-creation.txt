@@ -1,0 +1,71 @@
+Creating a Directory Inside Another Directory and Writing to a File (Windows Command Prompt)
+
+1. Open Command Prompt
+
+Press Win + R
+
+Type:
+cmd
+
+Press Enter
+
+2. Navigate to the Location Where You Want to Create the Folder
+
+Example: Go to Desktop
+
+cmd
+cd %USERPROFILE%\Desktop
+
+3. Create the Main Directory
+
+cmd
+mkdir Project
+
+4. Create a Subdirectory Inside the Main Directory
+
+cmd
+mkdir Project\Docs
+
+5. Navigate to the Subdirectory
+
+cmd
+cd Project\Docs
+
+6. Create a File
+
+cmd
+type nul > notes.txt
+
+OR
+
+cmd
+echo. > notes.txt
+
+7. Write Text to the File
+
+cmd
+echo Hello World > notes.txt
+
+8. Append Additional Text to the File
+
+cmd
+echo This is the second line >> notes.txt
+
+9. View the File Contents
+
+cmd
+type notes.txt
+
+Output:
+
+Hello World
+This is the second line
+
+Complete Example
+
+cmd
+cd %USERPROFILE%\Desktop
+mkdir Project
+mkdir Project\Docs
+echo Hello World > Project\Docs\notes.txt
+type Project\Docs\notes.txt
