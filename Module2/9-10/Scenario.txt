@@ -1,0 +1,20 @@
+Q1. Computer Lab
+A computer lab has 10 computers. All computers must be connected to a central switch. If one computer fails, the other computers should continue working normally.
+•	Which topology would you use?
+•	Draw the network diagram.
+Q2. School Network
+A school has 3 computer labs, with 15 computers in each lab. Each lab must have its own switch, and all labs must be connected to a main server.
+•	Which topology is suitable?
+•	How would you arrange the computers, switches, and server?
+Q3. Small Office
+A small office has 5 computers. All computers are connected to a single communication cable. If the cable develops a fault, the entire network may stop working.
+•	Which topology is being used?
+•	Write one disadvantage of this topology.
+Q4. Circular Network
+A network has 8 computers. Each computer is connected to its two neighboring computers, and the last computer is connected to the first computer.
+•	Which topology is this?
+•	Draw its network diagram.
+Q5. High-Reliability Network
+A company has 4 important servers. Each server must be directly connected to every other server so that alternative communication paths are available if a connection fails.
+•	Which topology should be used?
+•	How many direct connections are required in total?
