@@ -1,0 +1,82 @@
+Day 3: Introduction to IP Addressing
+1. What is an IP Address?
+An IP address is a logical address assigned to a network device.
+It helps identify a device on an IP network and allows communication between devices.
+Simple Example
+Suppose we have three computers:
+PC 1 → 192.168.1.10
+PC 2 → 192.168.1.20
+PC 3 → 192.168.1.30
+Each computer has a different IP address.
+PC 1 ←→ PC 2 ←→ PC 3
+The IP address helps the network know where data should be sent.
+
+2. Why Do We Need IP Addresses?
+Imagine a college has 100 computers.
+If every computer has an IP address:
+PC 1 → 192.168.1.10
+PC 2 → 192.168.1.11
+PC 3 → 192.168.1.12
+...
+PC 100 → 192.168.1.109
+The network can identify the devices.
+IP addresses are important for:
+Device identification
+Network communication
+Routing
+Internet communication
+Connecting different networks
+
+3. IPv4
+IPv4 stands for:
+Internet Protocol Version 4
+IPv4 is one of the most widely used IP addressing systems.
+An IPv4 address contains 32 bits.
+It is normally written using four decimal numbers separated by dots.
+Example:
+192.168.1.10
+
+4. IPv4 Structure
+IPv4 has 4 octets.
+Example:
+192 . 168 . 1 . 10
+Each part is called an octet.
+Each octet contains:
+8 bits
+Therefore:
+8 + 8 + 8 + 8 = 32 bits
+Binary Example
+192       168       1        10
+↓         ↓         ↓        ↓
+11000000  10101000  00000001 00001010
+So:
+IPv4 = 32 bits
+
+5. IPv4 Range
+Each IPv4 octet can contain values from:
+0 to 255
+Example of valid IPv4:
+192.168.1.10
+10.10.10.20
+172.16.5.50
+8.8.8.8
+Invalid example:
+192.168.1.300
+Why?
+Because an octet cannot be greater than 255.
+
+6. IPv4 Address Example
+Consider:
+192.168.1.25
+It contains:
+Network part
++
+Host part
+The subnet mask tells us which portion represents the network and which portion represents the host.
+For example:
+IP Address:
+192.168.1.25
+
+Subnet Mask:
+255.255.255.0
+Here, the first three octets represent the network portion and the last octet is available for hosts in that subnet.

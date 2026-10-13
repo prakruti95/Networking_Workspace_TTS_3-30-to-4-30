@@ -1,0 +1,445 @@
+# Step-by-Step IP Address Calculation
+
+We need to find these five things for each IP address:
+
+1. Network ID
+2. Broadcast ID
+3. First Usable IP
+4. Last Usable IP
+5. Total Usable Hosts
+
+## Step 1: Understand the basic formulas
+
+- Network ID: The first address of the subnet.
+- Broadcast ID: The last address of the subnet.
+- First Usable IP: Network ID + 1.
+- Last Usable IP: Broadcast ID − 1.
+- Total Usable Hosts: $2^h-2$, where $h$ is the number of host bits.
+
+We subtract 2 because the network address and broadcast address cannot normally be assigned to hosts.
+
+## Step 2: Learn the block size method
+
+For subnet masks other than `/24`, use this formula:
+
+$$
+\text{Block Size}=256-\text{Mask Value}
+$$
+
+The mask value is the relevant subnet-mask octet.
+
+| Subnet mask | CIDR | Block size | Usable hosts |
+| --- | --- | --- | --- |
+| 255.255.255.0 | /24 | 256 | 254 |
+| 255.255.255.128 | /25 | 128 | 126 |
+| 255.255.255.192 | /26 | 64 | 62 |
+| 255.255.255.224 | /27 | 32 | 30 |
+
+Now let’s solve each question step by step.
+
+## 1. IP Address: 192.168.10.25
+
+Subnet Mask: `255.255.255.0`
+
+Step 1: Find the CIDR
+
+The subnet mask `255.255.255.0` has 24 network bits.
+
+Therefore, CIDR = `/24`.
+
+Step 2: Find the block size
+
+$$
+256-0=256
+$$
+
+The block size is 256, so the last octet covers addresses from 0 to 255.
+
+Step 3: Find the Network ID
+
+The IP address is `192.168.10.25`.
+
+Since this is a `/24` subnet, the first three octets are the network portion and the last octet is the host portion.
+
+Set the host portion to 0:
+
+Network ID = `192.168.10.0`
+
+Step 4: Find the Broadcast ID
+
+Set the host portion to 255:
+
+Broadcast ID = `192.168.10.255`
+
+Step 5: Find the usable IP addresses
+
+- First Usable IP = Network ID + 1 = `192.168.10.1`
+- Last Usable IP = Broadcast ID − 1 = `192.168.10.254`
+
+Step 6: Calculate usable hosts
+
+There are 8 host bits.
+
+$$
+2^8-2=256-2=254
+$$
+
+Final answer:
+
+| Property | Answer |
+| --- | --- |
+| Network ID | `192.168.10.0` |
+| Broadcast ID | `192.168.10.255` |
+| First Usable IP | `192.168.10.1` |
+| Last Usable IP | `192.168.10.254` |
+| Total Usable Hosts | 254 |
+
+## 2. IP Address: 192.168.10.130
+
+Subnet Mask: `255.255.255.128`
+
+Step 1: Find the CIDR
+
+The subnet mask `255.255.255.128` is `/25`.
+
+Step 2: Calculate the block size
+
+$$
+256-128=128
+$$
+
+Block size = 128.
+
+This means the subnets in the last octet start at:
+
+- Subnet 1: 0–127
+- Subnet 2: 128–255
+
+Step 3: Find which subnet contains the IP
+
+The given IP is `192.168.10.130`.
+
+Since 130 falls between 128 and 255, it belongs to the second subnet.
+
+Therefore:
+
+Network ID = `192.168.10.128`
+
+Step 4: Find the Broadcast ID
+
+The last address in the range 128–255 is 255.
+
+Broadcast ID = `192.168.10.255`
+
+Step 5: Find the usable IP addresses
+
+- First Usable IP = `192.168.10.128 + 1` = `192.168.10.129`
+- Last Usable IP = `192.168.10.255 − 1` = `192.168.10.254`
+
+Step 6: Calculate usable hosts
+
+A `/25` subnet has $32-25=7$ host bits.
+
+$$
+2^7-2=128-2=126
+$$
+
+Final answer:
+
+| Property | Answer |
+| --- | --- |
+| Network ID | `192.168.10.128` |
+| Broadcast ID | `192.168.10.255` |
+| First Usable IP | `192.168.10.129` |
+| Last Usable IP | `192.168.10.254` |
+| Total Usable Hosts | 126 |
+
+## 3. IP Address: 172.16.5.70
+
+Subnet Mask: `255.255.255.192`
+
+Step 1: Find the CIDR
+
+The subnet mask `255.255.255.192` is `/26`.
+
+Step 2: Calculate the block size
+
+$$
+256-192=64
+$$
+
+Block size = 64.
+
+The subnets in the last octet start at:
+
+- Subnet 1: 0–63
+- Subnet 2: 64–127
+- Subnet 3: 128–191
+- Subnet 4: 192–255
+
+Step 3: Find which subnet contains the IP
+
+The given IP is `172.16.5.70`.
+
+Since 70 falls between 64 and 127, it belongs to the second subnet.
+
+Therefore:
+
+Network ID = `172.16.5.64`
+
+Step 4: Find the Broadcast ID
+
+The last address in the range 64–127 is 127.
+
+Broadcast ID = `172.16.5.127`
+
+Step 5: Find the usable IP addresses
+
+- First Usable IP = `172.16.5.64 + 1` = `172.16.5.65`
+- Last Usable IP = `172.16.5.127 − 1` = `172.16.5.126`
+
+Step 6: Calculate usable hosts
+
+A `/26` subnet has $32-26=6$ host bits.
+
+$$
+2^6-2=64-2=62
+$$
+
+Final answer:
+
+| Property | Answer |
+| --- | --- |
+| Network ID | `172.16.5.64` |
+| Broadcast ID | `172.16.5.127` |
+| First Usable IP | `172.16.5.65` |
+| Last Usable IP | `172.16.5.126` |
+| Total Usable Hosts | 62 |
+
+## 4. IP Address: 192.168.1.200
+
+Subnet Mask: `255.255.255.224`
+
+Step 1: Find the CIDR
+
+The subnet mask `255.255.255.224` is `/27`.
+
+Step 2: Calculate the block size
+
+$$
+256-224=32
+$$
+
+Block size = 32.
+
+The subnets in the last octet start at:
+
+- Subnet 1: 0–31
+- Subnet 2: 32–63
+- Subnet 3: 64–95
+- Subnet 4: 96–127
+- Subnet 5: 128–159
+- Subnet 6: 160–191
+- Subnet 7: 192–223
+- Subnet 8: 224–255
+
+Step 3: Find which subnet contains the IP
+
+The given IP is `192.168.1.200`.
+
+Since 200 falls between 192 and 223, it belongs to Subnet 7.
+
+Therefore:
+
+Network ID = `192.168.1.192`
+
+Step 4: Find the Broadcast ID
+
+The last address in the range 192–223 is 223.
+
+Broadcast ID = `192.168.1.223`
+
+Step 5: Find the usable IP addresses
+
+- First Usable IP = `192.168.1.192 + 1` = `192.168.1.193`
+- Last Usable IP = `192.168.1.223 − 1` = `192.168.1.222`
+
+Step 6: Calculate usable hosts
+
+A `/27` subnet has $32-27=5$ host bits.
+
+$$
+2^5-2=32-2=30
+$$
+
+Final answer:
+
+| Property | Answer |
+| --- | --- |
+| Network ID | `192.168.1.192` |
+| Broadcast ID | `192.168.1.223` |
+| First Usable IP | `192.168.1.193` |
+| Last Usable IP | `192.168.1.222` |
+| Total Usable Hosts | 30 |
+
+## Final answers at a glance
+
+| IP Address | CIDR | Network ID | Broadcast ID | First Usable IP | Last Usable IP | Usable Hosts |
+| --- | --- | --- | --- | --- | --- | --- |
+| 192.168.10.25 | /24 | 192.168.10.0 | 192.168.10.255 | 192.168.10.1 | 192.168.10.254 | 254 |
+| 192.168.10.130 | /25 | 192.168.10.128 | 192.168.10.255 | 192.168.10.129 | 192.168.10.254 | 126 |
+| 172.16.5.70 | /26 | 172.16.5.64 | 172.16.5.127 | 172.16.5.65 | 172.16.5.126 | 62 |
+| 192.168.1.200 | /27 | 192.168.1.192 | 192.168.1.223 | 192.168.1.193 | 192.168.1.222 | 30 |
+
+## Easy trick to remember for exams
+
+1. Find the CIDR from the subnet mask.
+2. Calculate block size: `256 − subnet mask value`.
+3. Find the range containing the given IP.
+4. The first address of the range is the Network ID.
+5. The last address of the range is the Broadcast ID.
+6. Add 1 to the Network ID and subtract 1 from the Broadcast ID to find usable IPs.
+7. Calculate usable hosts using $2^{32-\text{CIDR}}-2$.
+
+==============================================================
+Example: 192.168.10.130 /25
+Given:
+
+IP Address: 192.168.10.130
+
+CIDR: /25
+
+Step 1: Find the Subnet Mask
+/25 means 25 network bits.
+
+Subnet Mask = 255.255.255.128
+
+Step 2: Calculate the Block Size
+Formula:
+
+Block Size
+=
+256
+−
+Mask Value
+Block Size=256−Mask Value
+=
+256
+−
+128
+=
+128
+=256−128=128
+So, Block Size = 128.
+
+Step 3: Find the Subnet Range
+Since the block size is 128, divide the last octet into ranges:
+
+First range: 0–127
+
+Second range: 128–255
+
+Our IP address ends in 130, which falls in the range 128–255.
+
+Therefore, the IP belongs to the second subnet.
+
+Step 4: Find the Network ID
+The first address of the range 128–255 is 128.
+
+Network ID = 192.168.10.128
+
+Step 5: Find the Broadcast ID
+The last address of the range 128–255 is 255.
+
+Broadcast ID = 192.168.10.255
+
+Step 6: Find the First Usable IP
+Formula:
+
+First Usable IP
+=
+Network ID
++
+1
+First Usable IP=Network ID+1
+192.168.10.128 + 1
+
+First Usable IP = 192.168.10.129
+
+Step 7: Find the Last Usable IP
+Formula:
+
+Last Usable IP
+=
+Broadcast ID
+−
+1
+Last Usable IP=Broadcast ID−1
+192.168.10.255 − 1
+
+Last Usable IP = 192.168.10.254
+
+Step 8: Calculate Total Usable Hosts
+Formula:
+
+Host Bits
+=
+32
+−
+25
+=
+7
+Host Bits=32−25=7
+Total Usable Hosts
+=
+2
+7
+−
+2
+Total Usable Hosts=2 
+7
+ −2
+=
+128
+−
+2
+=
+126
+=128−2= 
+126
+​
+ 
+Final Answer
+Property
+
+Answer
+
+IP Address
+
+192.168.10.130/25
+
+Subnet Mask
+
+255.255.255.128
+
+Network ID
+
+192.168.10.128
+
+Broadcast ID
+
+192.168.10.255
+
+First Usable IP
+
+192.168.10.129
+
+Last Usable IP
+
+192.168.10.254
+
+Total Usable Hosts
+
+126
+
+Exam tip: For /25, always remember the block size is 128. The two ranges are 0–127 and 128–255. Since 130 belongs to the second range, the Network ID is 128 and the Broadcast ID is 255.
