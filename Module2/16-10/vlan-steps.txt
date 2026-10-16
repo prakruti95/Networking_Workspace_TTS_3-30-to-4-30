@@ -1,0 +1,117 @@
+Steps:
+
+1.
+Switch# configure terminal
+
+2.
+cretae VLAN10:
+Switch(config)# vlan 10
+Switch(config-vlan)# name HR
+Switch(config-vlan)# exit
+
+3.
+Switch(config)# vlan 20
+Switch(config-vlan)# name IT
+Switch(config-vlan)# exit
+
+4.
+Switch# show vlan brief
+
+do show ip interface brief
+
+
+# How to Create a VLAN in Cisco Packet Tracer
+
+Suppose a company has four computers.
+
+- PC1 and PC2 belong to the HR department.
+- PC3 and PC4 belong to the IT department.
+
+All four computers are connected to the same switch. We create VLANs to keep the HR and IT computers in separate networks.
+
+## Main Reasons for Creating VLANs
+
+1. Network Separation: To keep HR and IT computers in separate logical networks.
+2. Security: To separate one department's network from another department's network.
+3. Network Management: To make it easier to manage computers according to their departments.
+4. Broadcast Control: To limit broadcast traffic to the same VLAN.
+
+## Example in Cisco Packet Tracer
+
+Suppose you have:
+
+- 1 Switch
+- 4 PCs
+
+| Computer | Switch Port | VLAN    |
+| -------- | ----------- | ------- |
+| PC1      | Fa0/1       | VLAN 10 |
+| PC2      | Fa0/2       | VLAN 10 |
+| PC3      | Fa0/3       | VLAN 20 |
+| PC4      | Fa0/4       | VLAN 20 |
+
+### Step 1: Create VLANs
+
+Click the switch and open the CLI.
+
+```
+Switch> enable
+Switch# configure terminal
+Switch(config)# vlan 10
+Switch(config-vlan)# name HR
+Switch(config-vlan)# exit
+Switch(config)# vlan 20
+Switch(config-vlan)# name IT
+Switch(config-vlan)# exit
+```
+
+### Step 2: Assign Ports to VLANs
+
+For PC1 and PC2:
+
+```
+Switch(config)# interface range fa0/1-2
+Switch(config-if-range)# switchport mode access
+Switch(config-if-range)# switchport access vlan 10
+Switch(config-if-range)# exit
+```
+
+For PC3 and PC4:
+
+```
+Switch(config)# interface range fa0/3-4
+Switch(config-if-range)# switchport mode access
+Switch(config-if-range)# switchport access vlan 20
+Switch(config-if-range)# exit
+```
+
+### Step 3: Verify the VLANs
+
+```
+Switch(config)# end
+Switch# show vlan brief
+```
+
+You should see the ports for PC1 and PC2 under VLAN 10 and the ports for PC3 and PC4 under VLAN 20.
+
+### Step 4: Test Using Ping
+
+Assign suitable IP addresses to all PCs.
+
+Example:
+
+- PC1: `192.168.10.1`
+- PC2: `192.168.10.2`
+- PC3: `192.168.20.1`
+- PC4: `192.168.20.2`
+
+Now perform these tests:
+
+- Ping PC2 from PC1. The ping should succeed.
+- Ping PC4 from PC3. The ping should succeed.
+- Ping PC3 from PC1. The ping will fail without Inter-VLAN routing.
+
+Remember: Creating VLANs separates the network into different logical networks. To allow communication between different VLANs, you must configure Inter-VLAN Routing using a router or a Layer 3 switch.
+
+if you want to exit press ctrl+shift+6
+
