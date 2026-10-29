@@ -1,0 +1,52 @@
+Part B — IPv6
+19. Why Was IPv6 Introduced?
+IPv4 has only:
+32 bits
+That gives approximately:
+4.3 billion
+IPv4 addresses.
+With billions of Internet-connected devices, address availability became a major concern.
+IPv6 uses:
+128 bits
+This provides an enormously larger address space.
+________________________________________
+20. IPv6 Structure
+An IPv6 address is written using hexadecimal.
+Example:
+2001:db8:1234:5678:abcd:ef01:2345:6789
+It contains eight groups.
+Each group contains four hexadecimal digits.
+Example:
+2001
+db8
+1234
+5678
+abcd
+ef01
+2345
+6789
+Each group represents 16 bits.
+Therefore:
+8 × 16 = 128 bits
+________________________________________
+21. IPv4 vs IPv6
+Feature	IPv4	IPv6
+Address size	32-bit	128-bit
+Format	Decimal	Hexadecimal
+Example	192.168.1.10	2001:db8::10
+Address space	~4.3 billion	Enormous
+Broadcast	Supported	No traditional broadcast
+Address configuration	DHCP/static etc.	SLAAC, DHCPv6, static etc.
+Header	Variable length	Fixed base header
+NAT	Very common	Less fundamental to address conservation
+IPv6 is not simply "IPv4 with more addresses"; it also introduces changes to addressing and protocol behavior.
+________________________________________
+22. IPv6 Address Simplification
+IPv6 addresses can be shortened.
+For example:
+2001:0db8:0000:0000:0000:0000:0000:0010
+can be written as:
+2001:db8::10
+Rules allow leading zeroes in groups to be removed and a consecutive sequence of all-zero groups to be compressed with ::.
+You should understand this because IPv6 addresses look complicated at first, but they follow consistent rules.
+________________________________________
